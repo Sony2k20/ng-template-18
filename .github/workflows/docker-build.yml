@@ -1,17 +1,16 @@
-# name: Build Angular App and Docker Image
-# on:
-#   push:
-#     branches:
-#       - master
+name: Build Angular App and Docker Image
+on:
+  push:
+    branches:
+      - master
 
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-#     steps:
-#       - name: Checkout code
-#         uses: actions/checkout@v3
-
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 #       - name: Set up Node.js
 #         uses: actions/setup-node@v3
 #         with:
